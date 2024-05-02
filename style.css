@@ -14,15 +14,32 @@ h2{
 
 a{
     text-decoration: none;
+    font-weight:600;
+    color: chocolate;
+}
+#recipe-list li img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#recipe-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #recipe-list li{
+    width: 200px;
+    height: auto;
+    background-color: aquamarine;
     list-style-type:none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
 }
 
-#recipe-list li::before{
-    content: "-";
-}
+
 
 p, li{
     font-family: Arial, Helvetica, sans-serif;
